@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
 :root {
-    --dark : #090d25;
-    --cyan : #00fff0;
-    --cyan-2 : #00fff070;
-    --redpink : #ff005c;
-    --redpink-2 : #ff005c70;
+    --dark: #090d25;
+    --cyan: #00fff0;
+    --cyan-2: #00fff070;
+    --redpink: #ff005c;
+    --redpink-2: #ff005c70;
 }
 
 *,
@@ -41,7 +41,7 @@
 .btn,
 .btn::before,
 .btn::after {
-    transition: filter,box-shadow,color,background-color 200ms ease-in-out;
+    transition: filter 200ms ease-in-out, box-shadow 200ms ease-in-out, color 200ms ease-in-out, background-color 200ms ease-in-out;
 }
 
 .btn::before {
@@ -54,9 +54,9 @@
     transform: perspective(5rem) rotateX(50deg) scaleY(0.7);
     filter: blur(2rem);
     margin-top: 20px;
-    padding: 10PX;
+    padding: 10px; /* Исправлено на 'px' с маленькой буквы */
     text-align: center;
-    border-radio
+    border-radius: 0.7rem; /* Исправлено на 'border-radius' */
 }
 
 .btn-1 {
